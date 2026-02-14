@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import Assistant from './components/Assistant';
 import Globe3D from './components/Globe3D';
 import { motion, useScroll, useSpring } from 'framer-motion';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 const App: React.FC = () => {
   const { scrollYProgress } = useScroll();
@@ -137,6 +138,7 @@ const App: React.FC = () => {
       <Footer />
       
       <Assistant />
+      <SpeedInsights />
     </div>
   );
 };
