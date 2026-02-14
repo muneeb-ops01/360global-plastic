@@ -1,0 +1,7 @@
+{
+  "name": "360 Global Plastic Solutions",
+  "description": "A high-end, sustainable recycling and global polymer supply landing page featuring a 3D interactive globe and AI-powered sustainability consultant.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

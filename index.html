@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>360 Global Plastic Solutions | Sustainable Recycling & Polymer Supply</title>
+    <meta name="description" content="Australian-based plastic recycling and global polymer supply company delivering 360° sustainable solutions for PET, HDPE, LDPE, and PP materials.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              charcoal: '#0F172A',
+              midnight: '#0B1120',
+              ecoGreen: '#00FF88',
+              electricBlue: '#00C6FF',
+              softWhite: '#F8FAFC',
+              mutedGray: '#94A3B8',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Space Grotesk', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+        :root {
+            --eco-glow: rgba(0, 255, 136, 0.15);
+            --brand-gradient: linear-gradient(135deg, #00FF88, #00C6FF);
+        }
+        body {
+            background: #0B1120;
+            color: #F8FAFC;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+        /* Fix for anchor links landing behind fixed header */
+        section {
+            scroll-margin-top: 100px;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-card:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(0, 255, 136, 0.4);
+            box-shadow: 0 0 40px var(--eco-glow);
+            transform: translateY(-8px);
+        }
+        .gradient-text {
+            background: var(--brand-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .btn-primary {
+            background: var(--brand-gradient);
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .btn-primary:hover {
+            box-shadow: 0 0 35px rgba(0, 255, 136, 0.5);
+            transform: scale(1.05);
+        }
+        .hero-glow {
+            background: radial-gradient(circle at center, var(--eco-glow) 0%, transparent 70%);
+        }
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0B1120;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #00FF88;
+            border-radius: 10px;
+        }
+        .tight-tracking {
+            letter-spacing: -0.04em;
+        }
+        .mask-gradient {
+            mask-image: linear-gradient(to bottom, black, transparent);
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.474.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0",
+    "@react-three/drei": "https://esm.sh/@react-three/drei@^10.7.7",
+    "three": "https://esm.sh/three@^0.182.0",
+    "@react-three/fiber": "https://esm.sh/@react-three/fiber@^9.5.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.34.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
